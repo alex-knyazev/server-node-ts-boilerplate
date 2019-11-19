@@ -1,0 +1,38 @@
+{
+  "name": "pumped-gs-provider",
+  "version": "0.0.0",
+  "description": "description",
+  "author": "",
+  "scripts": {
+    "format": "prettier --write \"**/*.ts\"",
+    "build": "rm -rf dist && npx tsc",
+    "start": "ts-node -r tsconfig-paths/register src/index.ts",
+    "start:prod": "node -r ./tsconfig-paths-bootstrap.js dist/index.js"
+  },
+  "dependencies": {
+    "@types/mongoose": "^5.5.23",
+    "config": "3.2.2",
+    "cors": "2.8.5",
+    "dotenv": "8.1.0",
+    "express": "4.17.1",
+    "mongoose": "5.7.7"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.34",
+    "@types/cors": "2.8.6",
+    "@types/dotenv": "6.1.1",
+    "@types/express": "4.17.1",
+    "@types/node": "12.7.2",
+    "@typescript-eslint/eslint-plugin": "2.5.0",
+    "@typescript-eslint/parser": "2.5.0",
+    "eslint": "6.6.0",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "nodemon": "1.18.10",
+    "prettier": "1.18.2",
+    "ts-loader": "5.3.3",
+    "ts-node": "8.5.2",
+    "tsconfig-paths": "3.8.0",
+    "typescript": "3.7.2"
+  }
+}
